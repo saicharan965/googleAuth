@@ -1,0 +1,16 @@
+<div class="container" style="max-width: 550px">
+    <h2 class="text-center mb-5">Angular Login with Google</h2>
+  
+    <div *ngIf="isloggedin === false">
+      <div>
+        <button type="button" (click)="tryLogin()" class="btn btn-success">SignIn Google</button>
+      </div>
+    </div>
+  
+    <div *ngIf="isloggedin === true">
+      
+      <button type="button" (click)="logOutFromGoogle()" class="btn btn-primary">Logout from Google</button>
+  
+      
+    </div>
+  </div>
